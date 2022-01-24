@@ -1,0 +1,41 @@
+5. Find the output and write explanation?
+
+class Main {
+       public static void main(String[] args)
+ {
+       int t;
+       System.out.println("Value of variable t : "+t);
+       } 
+}
+
+
+Output:----------------------------------------------------------------------------
+
+C:\WorkSpaceEP\POC 1\Question 5>javac Main.java
+Main.java:6: error: variable t might not have been initialized
+        System.out.println("Value of variable t : "+t);
+                                                    ^
+1 error */
+
+Explanation:----------------------------------------------------------------------
+t is not initialized if t is initialized the value of t then it will print the value of t.
+
+
+Corrected code:----------------------------------------------------------------
+
+class Main 
+{
+    public static void main(String[] args) 
+   {
+        int t = 10;
+        System.out.println("Value of variable t : "+t);
+   }
+
+}
+
+Output:-------------------------------------------------------------------------------
+
+C:\WorkSpaceEP\POC 1\Question 5>javac Main.java
+
+C:\WorkSpaceEP\POC 1\Question 5>java Main
+Value of variable t : 10
